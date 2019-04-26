@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: hsql
+    active: mysql
 
 ---
 spring:
@@ -10,11 +10,19 @@ spring:
     username: sa
     password: ''
     driver-class-name: org.hsqldb.jdbcDriver
+logging:
+  level:
+    sql: DEBUG
+    root: DEBUG
 ---
 spring:
   profiles: mysql
   datasource:
-    url: jdbc:mysql:localhost:3306/testdb
+    url: jdbc:mysql://localhost:3306/testdb
     username: test
     password: 'test'
     driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  level:
+    sql: DEBUG
+    root: DEBUG

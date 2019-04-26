@@ -14,6 +14,15 @@ import priv.jujin.spring.data.jdbc.demo.springdatajdbc.entity.UserInfo;
  */
 
 public interface UserInfoRepository extends CrudRepository<UserInfo, Long> {
-    @Query("SELECT * FROM USER_INFO UI where UI.user_name=:user_name")
-    public UserInfo findByUserName(@Param("user_name") String userName);
+    @Query("SELECT " +
+            "USER_INFO.idx AS idx, " +
+            "USER_INFO.id AS id, " +
+            "USER_INFO.password AS password, " +
+            "USER_INFO.user_name AS user_name, " +
+            "USER_INFO.email AS email " +
+            "FROM USER_INFO where USER_INFO.user_name =:user_name")
+    UserInfo findByUserName(@Param("user_name") String userName);
+
+    @Query("SELECT * FROM USER_INFO where id=:id")
+    UserInfo findById(@Param("id") String id);
 }
