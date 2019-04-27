@@ -11,7 +11,7 @@ import org.springframework.data.relational.core.mapping.Table;
  * @author yjj(Yoo Ju Jin)
  * Created 26/04/2019
  *
- * resources/schema.sql 의 USER_INFO 테이블에 해당하는 Entity
+ * USER_INFO 테이블에 해당하는 Entity
  * @Table
  * spring-data-jdbc는 테이블 대소문자를 구분한다.
  * Repository에 @Query 애노테이션으로 만든 쿼리를 제외한 기본 메서드들에서
