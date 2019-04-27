@@ -8,6 +8,7 @@ import priv.jujin.spring.data.jdbc.demo.springdatajdbc.entity.UserInfo;
 /**
  * @author yjj(Yoo Ju Jin)
  * Created 26/04/2019
+ *
  * @Repository 애노테이션도 필요없이 Spring-Data-Commons의 CrudRepository만 상속받아서
  * 사용하면 된다.
  * CrudRepository<엔티티 자료형, 엔티티 아이디 자료형>
