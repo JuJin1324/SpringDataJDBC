@@ -25,7 +25,7 @@ public class SpringdatajdbcApplicationTests {
     @Test
     public void contextLoads() {
         Assert.assertNotNull(repository);
-        log.debug("repository : {}", repository);
+        log.debug("================== repository : {}", repository);
     }
 
     @Test
@@ -50,6 +50,6 @@ public class SpringdatajdbcApplicationTests {
     @Test
     public void findUserTest() {
         UserInfo userInfo = repository.findByUserName("홍길금");
-        log.debug("=============found userInfo : {}", userInfo);
+        log.debug("============= found userInfo : {}", userInfo);
     }
 }

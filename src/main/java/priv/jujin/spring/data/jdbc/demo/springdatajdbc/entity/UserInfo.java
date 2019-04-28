@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
@@ -21,6 +22,10 @@ import org.springframework.data.relational.core.mapping.Table;
  * @Column
  * 필드와 이름이 일치하는 경우 필요없으며
  * 필드와 이름이 일치하지 않는 경우에 DB 테이블의 필드와 Entity의 필드를 맵핑하는데 사용한다.
+ *
+ * @Transient
+ * DB 테이블에서 가져오지 않는 값
+ * Entity 클래스에 필드 정의할 때 DB 테이블에 없는 값은 Transient 애노테이션을 붙여서 처리한다.
  */
 
 @Getter
@@ -36,4 +41,7 @@ public class UserInfo {
     @Column("user_name")
     private String userName;
     private String email;
+
+    @Transient
+    private String etc;
 }
