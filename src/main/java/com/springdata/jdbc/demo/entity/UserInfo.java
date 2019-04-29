@@ -1,4 +1,4 @@
-package priv.jujin.spring.data.jdbc.demo.springdatajdbc.entity;
+package com.springdata.jdbc.demo.entity;
 
 import lombok.Getter;
 import lombok.Setter;
