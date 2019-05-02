@@ -2,7 +2,7 @@
 SpringBoot 2.0에서 Spring-Data-JDBC 라이브러리를 사용하여 데이터베이스에 접근하는 샘플 코드
 
 ## Maven
-```
+```xml
 <!-- spring-data-jdbc -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
