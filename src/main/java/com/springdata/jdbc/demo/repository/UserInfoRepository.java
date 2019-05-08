@@ -1,9 +1,9 @@
-package priv.jujin.spring.data.jdbc.demo.springdatajdbc.repository;
+package com.springdata.jdbc.demo.repository;
 
+import com.springdata.jdbc.demo.entity.UserInfo;
 import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
-import priv.jujin.spring.data.jdbc.demo.springdatajdbc.entity.UserInfo;
 
 import java.util.List;
 

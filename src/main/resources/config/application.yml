@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: mysql
+    active: hsql
 
 ---
 spring:
@@ -9,7 +9,7 @@ spring:
     url: jdbc:hsqldb:mem:spring-playground
     username: sa
     password: ''
-    driver-class-name: org.hsqldb.jdbcDriver
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
 logging:
   level:
     sql: DEBUG
