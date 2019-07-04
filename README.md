@@ -7,7 +7,7 @@ SpringBoot 2.0에서 Spring-Data-JDBC 라이브러리를 사용하여 데이터�
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-jdbc</artifactId>
-</dependency
+</dependency>
 <!-- hsqldb -->
 <dependency>
     <groupId>org.hsqldb</groupId>
