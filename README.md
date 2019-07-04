@@ -14,7 +14,7 @@ SpringBoot 2.0에서 Spring-Data-JDBC 라이브러리를 사용하여 데이터�
     <artifactId>hsqldb</artifactId>
     <version>2.4.1</version>
     <scope>test</scope>
-</dependency
+ </dependency>
 <!-- mysql -->
 <dependency>
     <groupId>mysql</groupId>
